@@ -45,3 +45,25 @@ NN_groupname/
 - English only — comments explain WHY, not WHAT the code already shows
 - Code-first: first 5 lines are running code
 - Run any file directly: `python3 filename.py`
+
+## Wayland / niri Users
+
+niri tiles all windows by default, including small PyQt6 tool windows. This makes exercises like `hello_world.py` (300×200) expand to full screen.
+
+**Quick fix** — float the window temporarily while testing:
+
+```bash
+# In another terminal, while the PyQt window is focused:
+niri msg action move-floating-window-to-workspace
+```
+
+**Permanent fix** — add a window rule in `~/.config/niri/config.kdl`:
+
+```kdl
+window-rule {
+    match title=".*"
+    open-floating true
+}
+```
+
+Remove or scope more tightly after your session. The window title is whatever you pass to `setWindowTitle()` in each script.
