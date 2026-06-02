@@ -34,6 +34,8 @@
 | 07 | styling_themes | Dark themes, stylesheets, custom palettes |
 | 08 | model_view | Table views, tree views, data-driven widgets |
 | 09 | multiwindow | Multiple windows, system tray, settings |
+| 10 | threading | Background threads — keep the UI responsive |
+| 11 | ipc_sockets | Processes talking: TCP, Unix sockets, daemons |
 
 ## Project Structure
 
