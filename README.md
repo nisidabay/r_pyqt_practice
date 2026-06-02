@@ -6,10 +6,16 @@
 # Each folder is a self-contained module with concepts, exercises, and a project.
 #
 # Prerequisites:
-#   Arch:   sudo pacman -S python-pyqt6
-#   Ubuntu: sudo apt install python3-pyqt6
-#   macOS:  pip install PyQt6
-#   Other:  pip install PyQt6
+#   # Create a virtual environment first (recommended):
+#   python3 -m venv venv
+#   source venv/bin/activate
+#   pip install PyQt6
+#
+#   # Or install system-wide (Arch):
+#   sudo pacman -S python-pyqt6
+#
+#   # Ubuntu:
+#   sudo apt install python3-pyqt6
 #
 # Quick Start:
 #   cd 01_hello_window/concept
